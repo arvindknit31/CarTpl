@@ -1,0 +1,219 @@
+#slider-wrapper:before {
+	content: none;
+}
+#slides {
+	position:relative;
+}
+#slides h1 {
+}
+#slides .slidesjs-previous, #slides .slidesjs-next {
+	position:absolute;
+	top:50%;
+	width:32px;
+	height:80px;
+	margin-top: -40px;
+	background-image:url("images/arrows-30.png");
+	background-repeat:no-repeat;
+	font-size:0px;
+	display:none;
+	z-index:1500;
+}
+#slides:hover .slidesjs-previous, #slides:hover .slidesjs-next {
+	display:block;
+}
+#slides .slidesjs-previous {
+	left:10px;
+	background-position: 0px 0px;
+}
+#slides .slidesjs-previous:hover {
+	background-position: -32px 0px;
+}
+#slides .slidesjs-next {
+	right:10px;
+	background-position: 0px -80px;
+}
+#slides .slidesjs-next:hover {
+	background-position: -32px -80px;
+}
+#slides .slides_container, #slides .slides_control {
+	height:100% !important;
+}
+#slides .headerimg {
+	float:left;
+	display:inline-block;
+	margin:10px 10px 0px 10px;
+}
+#slides .slidesjs-pagination {
+	position:absolute;
+	z-index:10;
+	right:20px;
+	bottom:20px;
+	margin:0px;
+	padding:0px;
+}
+#slides .slidesjs-pagination li {
+	list-style:none;
+	margin-right:6px;
+	float:left;
+	margin-bottom:0;
+}
+#slides .slidesjs-pagination a {
+	margin-left:0;
+	padding:6px;
+	background-color:#ffffff;
+	font-size:0px;
+	display:block;
+	border:none;
+	line-height: 0;
+}
+#slides .slidesjs-pagination a.active, #slides .slidesjs-pagination a:hover {
+	background-color:#000000;
+}
+#slides .bannercontent {
+	position: relative;
+	height: 100%;
+}
+#slides .headercontent {
+	background-image:url("images/dark_tile1.png");
+	/*	
+	text-align:center;
+	padding: 20px 20px 16px 20px;
+	margin-left:-460px;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	left: 50%;
+	min-width: 280px;
+*/	
+
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+}
+#slides a {
+	text-decoration: none !important;
+	color: #FFFFFF !important;
+	opacity: 1;
+}
+#slides a:hover {
+	text-decoration:underline;
+}
+#featured_area, #slides {
+	/*height: 350px;*/
+	/*height: 100%;	*/
+	height: auto;
+	/*	max-height: 100%;*/
+	overflow: hidden;
+}
+.headercontent h1 {
+	color:#FFFFFF !important;
+	text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	
+}
+.banner-link {
+	width: 100%;
+}
+.banner-link img {
+	width: 100%;
+	height: 100%;
+}
+.slidesjs-play, .slidesjs-stop {
+	display: none !important;
+}
+#slides .slidesjs-container, #slides .slidesjs-control {
+	max-height: 100%;
+}
+#slider-wrapper {
+	height: auto !important;
+	min-height: 50px;
+}
+#slides .headercontent h2 {
+	margin-bottom: 0;
+}
+ @media only screen and (min-width: 1350px) {
+ #featured_area, #slides {
+ /*height: 800px;*/
+}
+}
+ @media only screen and (min-width: 1061px) and (max-width:1350px) {
+ #featured_area, #slides {
+	 /*height: 410px;*/
+	 height: 800px;
+}
+}
+.headercontent p {
+	margin-bottom:0;
+}
+/*
+.headercontent strong{
+font: 36px arial;
+text-transform: uppercase;	
+letter-spacing: 4px;	
+}
+*/
+/* New Tpl Style Start */
+
+#slides {
+/* margin-top: -70px; */
+/* background-position: center center;	*/
+}
+.banner-link img {
+	display: none;
+}
+#slides .slidesjs-container, #slides .slidesjs-control {
+/*height: 800px !important;*/
+
+
+
+}
+/* New Tpl Style End */
+@media only screen and (min-width: 960px) and (max-width:1060px) {
+ #featured_area, #slides {
+/*height: 400px;*/
+	}
+}
+ @media only screen and (min-width: 800px) and (max-width:960px) {
+ #featured_area, #slides {
+ margin-top: 0;
+/*	
+
+	 margin-top: 60px;		
+	 height: 350px;
+	*/	
+	}
+}
+ @media only screen and (min-width:600px) and (max-width:800px) {
+ #featured_area, #slides {
+ margin-top: 0;
+/*	
+	margin-top: 60px;		
+	height: 350px;
+	*/	
+	}
+}
+ @media only screen and (min-width:481px) and (max-width:600px) {
+ #featured_area, #slides {
+ margin-top: 0;
+/*	
+	 margin-top: 60px;		
+	 height: 300px;
+	*/	
+	}
+}
+ @media only screen and (max-width:480px) {
+ #featured_area, #slides {
+ margin-top: 0;
+/*	
+	 height: 200px;
+	 margin-top: 60px;		
+     */		
+	}
+}
+.bannercontent img{
+    width: 100%;
+    height: auto;
+}
+.slidesjs-container, .slidesjs-control{
+    width: 100% !important;
+}
