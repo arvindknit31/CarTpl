@@ -1,3 +1,208 @@
 @import "Bootstrap/bootstrap.less";
 @import "Fontawsome/font-awesome.less";
+@import "animation.less";
+@import "helper-classes.less";
 @import "variables.less";
+
+body{
+    background: url("../images/pattern-grid.jpg") repeat scroll left top / 18px 18px #fff;
+}
+.trans-bg{
+    background: @TransColor;    
+    color: #fff;
+}
+#topnav{
+    margin: 0;
+}
+.sidr {
+    background: @DefaultTheme; 
+    color: #fff;
+    font-size: 15px;
+    height: 110%; 
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 290px;
+    z-index: 1000;
+    .box-shadow(0 3px 9px rgba(0,0,0,.5) inset)
+}
+.right {
+    float: right !important;
+}
+#sidr-0-button{
+    font-size: 21px;
+    color: #fff;
+    margin-top: 5px;
+}
+#sidr-0-button::before { 
+    color: #fff;
+    content: "Menu";
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 36px;
+    padding-right: 16px;
+}
+#sidr-wrapper-0 a {
+    display: block;
+    height: 100%;
+    text-decoration: none !important;
+    width: 100%;
+}
+#maincontainer{
+    position: relative;
+}
+#primary_navigation{ 
+    margin-top: 50px;
+}
+.topnav > ul {
+    margin: 0;
+    padding: 0;
+}
+.topnav > ul > li, .topnav > ul > li > ul > li {
+    border-bottom: 1px solid #AAAAB0;
+}
+.topnav > ul > li {
+    display: block;
+    padding: 12px 0;
+    position: relative;
+}
+.first {
+    margin-left: 0;
+    padding-left: 0;
+}
+.topnav > ul > li > a {
+    color: #fff;
+    font-size: 15px;
+}
+.topnav a {
+    margin: 0 45px 0 15px;
+    padding: 0 15px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+.app-box{
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+    .icon-thin_plus{
+        background: @DefaultTheme;
+        padding: 3px;
+        color: #fff;
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
+        transition: all 0.3s ease-out 0s;              
+    }
+    .text-box{
+        position: absolute;
+        left:0;
+        top: 50%;
+        width: 100%;
+    }
+    h3{
+        color: #fff;
+        margin-bottom: 25px;
+    }
+}
+.app-box .overlay {
+    background-color: rgba(7, 7, 22, 0.7);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+    z-index: 3;
+}
+.app-box:hover{
+    .icon-thin_plus{
+        opacity: 0;
+    }
+    .overlay{
+        width: 0;
+        height:0;
+
+    }    
+}
+.title-box{
+    position: relative;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.content-area{
+    padding: 30px 30px;
+}
+#global-footer{
+    padding: 30px 30px;
+    background: @DefaultTheme;
+    color: #fff;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .primary{
+        a{
+            text-transform: uppercase;
+        }
+    }
+    nav {
+        margin-bottom: 15px;        
+        a{
+            margin: 5px 10px;
+        }
+    }
+}
+#siteinfo{
+    a{
+        font-size: 12px;
+        color: #fff;
+    }
+}
+.social-link{
+    a{
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        line-height: 40px;
+        font-size: 28px;
+        transition: all 0.5s ease-out 0s;
+        &:hover{
+            background: #fff;
+            color: @DefaultTheme !important;
+        }
+    }
+
+}
+.navbar-default{
+    border-color: #aaaab0;
+}
+
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-page{ 
+    span{
+        background: @TransColor !important;
+    }
+    &.active{
+        span{
+        background: @DefaultTheme !important;            
+        }
+    } 
+}
+
+.owl-prev, .owl-next{
+     background: @TransColor !important;
+} 

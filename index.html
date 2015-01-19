@@ -5,43 +5,217 @@
         <meta charset="windows-1252">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/bannerrotator.css" />        
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">                
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.css">                
         <link rel="stylesheet" type="text/css" href="css/app.css" />
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/bannerrotator.js"></script>
+        <script src="js/owl.carousel.js"></script>        
         <script type="text/javascript" src="js/common.js"></script>
     </head>
     <body>
-        <header id="global-header">
-            <div class="container">
-                <div id="topnav" class="row">
-                    <div class="col-md-10">
-                    </div>    
-                    <div class="col-md-10">
-                        <img alt="logo" src="images/logo.jpg" />
-                    </div>    
-                    <div class="col-md-10">
-                        
-                    </div>    
-                </div>
-            </div>    
-        </header>
-        <section>
-            <div id="slides">
-                <div class="bannercontent">
-                    <img class="banner-image" src="images/banner-1.jpg" alt="banner-image" />
-                </div>
-                <div class="bannercontent">
-                    <img class="banner-image" src="images/banner-2.jpg" alt="banner-image" />
-                </div>
-                <div class="bannercontent">
-                    <img class="banner-image" src="images/banner-3.jpg" alt="banner-image" />
-                </div>
-                <div class="bannercontent">
-                    <img class="banner-image" src="images/banner-4.jpg" alt="banner-image" />
+        <nav style="right: -310px;" class="sidr right" id="RespLeftNav">
+            <div id="ajaxmenu">
+                <div class="topnav clearfix" id="primary_navigation">
+                    <ul id="myajaxmenu">
+                        <li class="first selected" id="m1"><a title="Home" href="#">Home</a></li>
+                        <li id="m50"><a title="Link-1" href="#">Link-1</a></li>
+                        <li id="m60"><a title="Link-2" href="#">Link-2</a></li>
+                        <li id="m70"><a title="Link-3" href="#">Link-3</a></li>
+                        <li id="m90"><a title="Link-4" href="#">Link-4</a></li>
+                        <li id="m120"><a title="Link-5" href="#">Link-5</a></li>
+                        <li id="m140"><a title="Link-6" href="#">Link-6</a></li>
+                        <li id="m110"><a title="Link-7" href="#">Link-7</a></li>
+                        <li class="last" id="m6"><a title="Link-8" href="#">Link-8</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <section id="maincontainer">  
+            <header id="global-header">
+                <div class="container">
+                    <nav id="topnav" class="row navbar navbar-default navbar-fixed-top trans-bg">
+                        <div class="col-md-10">
+                        </div>    
+                        <div class="col-md-10 text-center">
+                            <img alt="logo" src="images/logo.jpg" />
+                        </div>    
+                        <div class="col-md-10">
+                            <div class="undefined right" id="sidr-wrapper-0">
+                                <a id="sidr-0-button" href="#sidr-0"><span class="fa fa-bars"></span></a>
+                            </div>
+                        </div>    
+                    </nav>
+                </div>    
+            </header>
+            <section id="top-banner">
+                <div id="slides">
+                    <div class="bannercontent">
+                        <img class="banner-image" src="images/banner-1.jpg" alt="banner-image" />
+                    </div>
+                    <div class="bannercontent">
+                        <img class="banner-image" src="images/banner-2.jpg" alt="banner-image" />
+                    </div>
+                    <div class="bannercontent">
+                        <img class="banner-image" src="images/banner-3.jpg" alt="banner-image" />
+                    </div>
+                    <div class="bannercontent">
+                        <img class="banner-image" src="images/banner-4.jpg" alt="banner-image" />
+                    </div>
+                </div>
+            </section>
+            <section class="content-area request-and-ride">
+                <div class="container">
+                    <article>
+                        <h2 class="text-center row-space-4">The Uber App</h2>
+                        <p class="text-center row-space-4">Request, ride, and pay via your mobile phone</p>
+
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-7.jpg" alt="Sample-7" />
+                                        <div class="text-box">                                        
+                                            <h3 class="headline">One Tap to Ride</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-6.jpg" alt="Sample-6" />
+                                        <div class="text-box">
+                                            <h3 class="headline">Reliable Pickups</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-3.jpg" alt="Sample-3" />                                        
+                                        <div class="text-box">                                        
+                                            <h3 class="headline">Clear Pricing</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-4.jpg" alt="Sample-4" />                                        
+                                        <div class="text-box">
+                                            <h3 class="headline">Cashless &amp; Convenient</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-5.jpg" alt="Sample-5" />
+                                        <div class="text-box">                                        
+                                            <h3 class="headline">Feedback Matters</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app-box">
+                                    <div class="title-box">
+                                        <img src="images/sample-2.jpg" alt="Sample-2" />
+                                        <div class="text-box">                                        
+                                            <h3 class="headline">Split Your Fare</h3>
+                                            <span class="icon-thin_plus fa fa-plus"></span>
+                                        </div>    
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>            
+            <section class="content-area">
+                <div class="container">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item"><img src="images/sample-2.jpg" alt="sample-2"></div>
+                        <div class="item"><img src="images/sample-3.jpg" alt="sample-3"></div>
+                        <div class="item"><img src="images/sample-4.jpg" alt="sample-4"></div>
+                        <div class="item"><img src="images/sample-2.jpg" alt="sample-5"></div>
+                        <div class="item"><img src="images/sample-6.jpg" alt="sample-6"></div>
+                        <div class="item"><img src="images/sample-7.jpg" alt="sample-7"></div>
+                        <div class="item"><img src="images/sample-5.jpg" alt="sample-5"></div>
+                        <div class="item"><img src="images/sample-3.jpg" alt="sample-3"></div>
+                        <div class="item"><img src="images/sample-2.jpg" alt="sample-2"></div>
+                        <div class="item"><img src="images/sample-3.jpg" alt="sample-3"></div>
+                        <div class="item"><img src="images/sample-4.jpg" alt="sample-4"></div>
+                        <div class="item"><img src="images/sample-2.jpg" alt="sample-5"></div>
+                        <div class="item"><img src="images/sample-6.jpg" alt="sample-6"></div>
+                        <div class="item"><img src="images/sample-7.jpg" alt="sample-7"></div>
+                        <div class="item"><img src="images/sample-5.jpg" alt="sample-5"></div>
+                        <div class="item"><img src="images/sample-3.jpg" alt="sample-3"></div>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="global-footer" >
+                <div class="container">
+                    <div class="row">
+                        <nav class="social-link text-center">
+                            <a href="#" target="_blank" class="fa fa-google-plus"></a>
+                            <a href="#" target="_blank" class="fa fa-twitter"></a>
+                            <a href="#" target="_blank" class="fa fa-facebook"></a>
+                            <a href="#" target="_blank" class="fa fa-pinterest"></a>
+                            <a href="#" target="_blank" class="fa fa-youtube"></a>
+                        </nav>
+                        <nav class="primary text-center">
+                            <a data-ga="global-footer.home-button-click" class="ga-click-track" href="/">
+                                Home
+                            </a>
+                            <span>•</span>
+                            <a data-ga="global-footer.cities-button-click" class="ga-click-track" href="#">
+                                Cities
+                            </a>
+                            <span>•</span>
+                            <a data-ga="global-footer.drivers-button-click" class="ga-click-track" href="#">
+                                Drive
+                            </a>
+                        </nav>
+                        <nav class="secondary text-center">
+                            <a target="_blank" href="#">
+                                Help Center
+                            </a>
+                            <a data-ga="global-footer.jobs-button-click" class="ga-click-track" href="#">
+                                Careers
+                            </a>
+                            <a target="_blank" href="#">
+                                Developers
+                            </a>
+                            <a target="_blank" href="#">
+                                Blog
+                            </a>
+                            <a data-ga="global-footer.about-button-click" class="ga-click-track" href="#">
+                                About Us
+                            </a>
+                        </nav>
+                        <div id="siteinfo" class="text-center"><a target="_blank" href="#">&copy; Website Name</a></div>
+                    </div>
+                </div>
+            </footer>
         </section>
-        <footer id="global-footer"></footer>
     </body>
 </html>
