@@ -25,7 +25,7 @@ body{
     width: 290px;
     z-index: 1000;
     //.box-shadow(0 3px 9px rgba(0,0,0,.5) inset)
-    #gradient .horizontal(rgba(255,255,255,.2); @DefaultTheme; @start-percent: 0%; @end-percent: 6%)
+    #gradient .horizontal(rgba(255,255,255,.2); @DefaultTheme; @start-percent: 0%; @end-percent: 5%)
 }
 .right {
     float: right !important;
@@ -66,6 +66,10 @@ body{
     display: block;
     padding: 12px 0;
     position: relative;
+    transition: all 0.4s ease 0s;
+    &.selected, &:hover{
+        background: rgba(255,255,255,.2);
+    }
 }
 .first {
     margin-left: 0;
