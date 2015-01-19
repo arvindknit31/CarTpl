@@ -193,7 +193,7 @@ jQuery(function () {
          height: 900,
          */
         navigation: {
-            active: true,
+            active: false,
             effect: "fade"
         },
         pagination: {
@@ -290,7 +290,7 @@ if(doesExist($("#owl-demo"))){
         //singleItem: true,
         transitionStyle: "fade",
         autoPlay: 3000, //Set AutoPlay to 3 seconds
-        items: 4,
+        items: 5,
         itemsDesktop: [1199, 3],
         itemsDesktopSmall: [979, 3]
 

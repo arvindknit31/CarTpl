@@ -24,7 +24,8 @@ body{
     top: 0;
     width: 290px;
     z-index: 1000;
-    .box-shadow(0 3px 9px rgba(0,0,0,.5) inset)
+    //.box-shadow(0 3px 9px rgba(0,0,0,.5) inset)
+    #gradient .horizontal(rgba(255,255,255,.2); @DefaultTheme; @start-percent: 0%; @end-percent: 6%)
 }
 .right {
     float: right !important;
@@ -206,3 +207,14 @@ body{
 .owl-prev, .owl-next{
      background: @TransColor !important;
 } 
+
+.container-style{
+    background: #fff;
+    border-radius: 5px;
+    .box-shadow(0 0px 3px rgba(0, 0, 0, 0.5));
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#slides{
+    .box-shadow(0 4px 5px rgba(0, 0, 0, 0.5));
+}

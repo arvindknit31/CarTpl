@@ -47,27 +47,30 @@
 	position:absolute;
 	z-index:10;
 	right:20px;
-	bottom:20px;
+	bottom:25px;
 	margin:0px;
 	padding:0px;
 }
 #slides .slidesjs-pagination li {
 	list-style:none;
-	margin-right:6px;
+	margin-right:12px;
 	float:left;
 	margin-bottom:0;
 }
 #slides .slidesjs-pagination a {
 	margin-left:0;
-	padding:6px;
+	padding:8px;
 	background-color:#ffffff;
 	font-size:0px;
 	display:block;
 	border:none;
 	line-height: 0;
+        border-radius: 20px;
+        outline: 0 !important;
+        box-shadow: 0 0 5px rgb(14,60,82);
 }
 #slides .slidesjs-pagination a.active, #slides .slidesjs-pagination a:hover {
-	background-color:#000000;
+	background-color: rgb(14,60,82);
 }
 #slides .bannercontent {
 	position: relative;
