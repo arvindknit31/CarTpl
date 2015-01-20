@@ -41,18 +41,19 @@ function scrollIdMatch(selector) {
 
 function setFeatureImageSize() {
     setTimeout(
-            function () {
+            function() {
                 winHeight = (jQuery(window).height());
                 winWidth = jQuery(window).width();
-                if (doesExist(jQuery('.feature-image-resize'))) {
+                if(winHeight > winWidth){
+                    winHeight = (winWidth*60)/100;
+                }
+                if(doesExist(jQuery('.feature-image-resize'))) {
                     jQuery('.feature-image-resize').css({'height': winHeight, 'width': winWidth});
                 }
 
                 if (doesExist(jQuery('.slidesjs-container,.slidesjs-control'))) {
                     jQuery('.slidesjs-container,.slidesjs-control').css({'height': winHeight, 'width': winWidth});
                 }
-
-
             }, 10);
 }
 ;
@@ -62,6 +63,7 @@ jQuery("document").ready(function () {
 jQuery(window).resize(function () {
     setFeatureImageSize();
 });
+
 function pageScroll(ghH, target) {
     jQuery('html, body').stop().animate({
         'scrollTop': jQuery(target).offset().top - ghH
@@ -235,18 +237,18 @@ $(function () {
         e.stopPropagation();
         if ($(this).hasClass("menu-open")) {
             $(leftNavId).animate({
-                right: -leftNavWidth
+                left: -leftNavWidth
             });
             $("#maincontainer,#global-footer").animate({
-                left: 0
+                right: 0
             });
             $(this).removeClass("menu-open");
         } else {
             $(leftNavId).animate({
-                right: 0
+                left: 0
             });
             $("#maincontainer,#global-footer").animate({
-                left: -containerPos
+                right: -containerPos
             });
             $(this).addClass("menu-open");
         }
@@ -254,10 +256,10 @@ $(function () {
     $("#maincontainer, .sidr-class-menuclose").click(function (e) {
         e.stopPropagation();
         $(leftNavId).animate({
-            right: -leftNavWidth
+            left: -leftNavWidth
         });
         $("#maincontainer,#global-footer").animate({
-            left: 0
+            right: 0
         });
         $("#sidr-wrapper-0").removeClass("menu-open");
     });

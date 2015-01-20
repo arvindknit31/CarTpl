@@ -25,7 +25,7 @@ body{
     width: 290px;
     z-index: 1000;
     //.box-shadow(0 3px 9px rgba(0,0,0,.5) inset)
-    #gradient .horizontal(rgba(255,255,255,.2); @DefaultTheme; @start-percent: 0%; @end-percent: 5%)
+    #gradient .horizontal(@DefaultTheme; rgba(0,0,0,.5); @start-percent: 93%; @end-percent: 100%)
 }
 .right {
     float: right !important;
@@ -34,20 +34,22 @@ body{
     font-size: 21px;
     color: #fff;
     margin-top: 5px;
+    margin-left: 5px;
 }
-#sidr-0-button::before { 
+#sidr-0-button::after { 
     color: #fff;
     content: "Menu";
     font-family: Arial;
     font-size: 20px;
     line-height: 36px;
-    padding-right: 16px;
+    padding-left: 16px;
 }
 #sidr-wrapper-0 a {
     display: block;
     height: 100%;
     text-decoration: none !important;
     width: 100%;
+    outline: 0;
 }
 #maincontainer{
     position: relative;
@@ -260,4 +262,8 @@ body{
 }
 .comment-field{
     min-height: 100px;
+}
+#top-logo{
+    font-size: 22px;
+    padding: 8px 0;
 }

@@ -10807,11 +10807,11 @@ body {
   top: 0;
   width: 290px;
   z-index: 1000;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.2) 0%, #0e3c52 5%);
-  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.2) 0%, #0e3c52 5%);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, #0e3c52 5%);
+  background-image: -webkit-linear-gradient(left, #0e3c52 93%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, #0e3c52 93%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, #0e3c52 93%, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ffffff', endColorstr='#ff0e3c52', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0e3c52', endColorstr='#80000000', GradientType=1);
 }
 .right {
   float: right !important;
@@ -10820,20 +10820,22 @@ body {
   font-size: 21px;
   color: #fff;
   margin-top: 5px;
+  margin-left: 5px;
 }
-#sidr-0-button::before {
+#sidr-0-button::after {
   color: #fff;
   content: "Menu";
   font-family: Arial;
   font-size: 20px;
   line-height: 36px;
-  padding-right: 16px;
+  padding-left: 16px;
 }
 #sidr-wrapper-0 a {
   display: block;
   height: 100%;
   text-decoration: none !important;
   width: 100%;
+  outline: 0;
 }
 #maincontainer {
   position: relative;
@@ -11038,4 +11040,8 @@ body {
 }
 .comment-field {
   min-height: 100px;
+}
+#top-logo {
+  font-size: 22px;
+  padding: 8px 0;
 }
