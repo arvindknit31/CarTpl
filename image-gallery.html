@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Gallery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("[rel^='lightbox']").prettyPhoto();
+            });
+        </script>
+    </head>
+    <body>
+        <nav style="left: -310px;" class="sidr right" id="RespLeftNav">
+            <div id="ajaxmenu">
+                <div class="topnav clearfix" id="primary_navigation">
+                    <ul id="myajaxmenu">
+                        <li class="selected"><a title="Home" href="index.html">Home</a></li>
+                        <li><a title="Sign Up" href="signup.html">Sign Up</a></li>
+                        <li><a title="User Rating" href="userRating.html">User Rating</a></li>
+                        <li><a title="Image Gallery" href="image-gallery.html">Image Gallery</a></li>
+                        <li><a title="Contact Us" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="maincontainer">  
+            <header id="global-header">
+                <div class="container">
+                    <nav id="topnav" class="row navbar navbar-default navbar-fixed-top trans-bg">
+                        <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="undefined left" id="sidr-wrapper-0">
+                                <a id="sidr-0-button" href="#sidr-0"><span class="fa fa-bars"></span></a>
+                            </div>
+                        </div>    
+                        <div id="top-logo" class="col-xs-8 col-sm-4 col-md-4 text-center">
+                              <a href="index.html">  
+                                <img alt="Web App" src="images/logo.png" />
+                              </a>  
+                        </div>    
+                        <div class="col-xs-1 col-sm-4 col-md-4">
+                        </div>    
+                    </nav>
+                </div>    
+            </header>
+            <section id="top-banner" class="text-center banner-shadow">
+                <img class="max-width" src="images/gallery-banner.jpg" alt="Top-Banner" />
+            </section>
+            <section class="content-area">
+                <div class="container container-style">
+                    <ul class="thumbnails row">
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/1.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/1.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/2.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/2.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/3.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/3.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/4.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/4.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/5.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/5.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/6.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/6.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/7.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/7.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                        <li class="col-sm-3 col-md-3">
+                            <a href="images/gallery/8.jpg" rel="lightbox[group]" class="thumbnail"><img title="Image Title" src="images/gallery/8.jpg" class="group1"></a>
+                        </li> <!--end thumb -->
+                    </ul>                    
+                </div>
+            </section>            
+            <footer id="global-footer" >
+                <div class="container">
+                    <div class="row">
+                        <nav class="social-link text-center">
+                            <a href="#" target="_blank" class="fa fa-google-plus"></a>
+                            <a href="#" target="_blank" class="fa fa-twitter"></a>
+                            <a href="#" target="_blank" class="fa fa-facebook"></a>
+                            <a href="#" target="_blank" class="fa fa-pinterest"></a>
+                            <a href="#" target="_blank" class="fa fa-youtube"></a>
+                        </nav>
+                        <nav class="primary text-center">
+                            <a data-ga="global-footer.home-button-click" class="ga-click-track" href="index.html">
+                                Home
+                            </a>
+                            <span>•</span>
+                            <a data-ga="global-footer.cities-button-click" class="ga-click-track" href="#">
+                                Cities
+                            </a>
+                            <span>•</span>
+                            <a data-ga="global-footer.drivers-button-click" class="ga-click-track" href="#">
+                                Drive
+                            </a>
+                        </nav>
+                        <nav class="secondary text-center">
+                            <a target="_blank" href="#">
+                                Help Center
+                            </a>
+                            <a data-ga="global-footer.jobs-button-click" class="ga-click-track" href="#">
+                                Careers
+                            </a>
+                            <a target="_blank" href="#">
+                                Developers
+                            </a>
+                            <a target="_blank" href="#">
+                                Blog
+                            </a>
+                            <a data-ga="global-footer.about-button-click" class="ga-click-track" href="#">
+                                About Us
+                            </a>
+                        </nav>
+                        <div id="siteinfo" class="text-center"><a target="_blank" href="#">Copyright &copy; Your Website 2015</a></div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>
